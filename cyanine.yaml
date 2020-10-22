@@ -1,0 +1,400 @@
+name: Cyanine Theme
+version: 1.1.0
+description: Cyanine is a modern and flexible multi-purpose theme and the standard theme for typemill. 
+author: Trendschau
+homepage: https://trendschau.net
+licence: MIT
+paypal: https://paypal.me/typemill
+amount: 25
+
+settings:
+  landingpage: on
+  landingpageIntro: 1
+  landingpageNavi: 2
+  naviTitle: Get Started
+  fontheadline: sans-serif
+  fontnavi: sans-serif
+
+forms:
+  fields:
+
+    layoutsize:
+      type: select
+      label: Layout Size
+      options:
+        standard: Standard
+        large: Large
+        full: Full Width
+
+    landingpage:
+      type: checkbox
+      checkboxlabel: Activate a landingpage
+
+    landingpageIntro:
+      type: fieldset
+      legend: Landingpage Intro Segment
+      fields:
+        landingpageIntro:
+          type: number
+          label: Position of Intro Segment
+          description: Use 0 to disable the section
+        introTitle:
+          type: text
+          label: Title for your landingpage intro
+          placeholder: Typemill
+          description: Leave empty to use the title of your base content page.
+        introMarkdown:
+          type: textarea
+          label: Text for your landingpage intro (use markdown)
+          description: Leave empty to use the content of your base content page.
+        introButtonLink:
+          type: text
+          label: Link for startbutton
+          placeholder: /my/deeplink
+        introButtonLabel:
+          type: text
+          label: Label for startbutton
+          placeholder: my label
+
+    landingpageInfo:
+      type: fieldset
+      legend: Landingpage Info Segment
+      fields:
+        landingpageInfo:
+          type: number
+          label: Position of Info Segment
+          description: Use 0 to disable the section          
+        infoMarkdown:
+          type: textarea
+          label: Use Markdown
+
+    landingpageTeaser:
+      type: fieldset
+      legend: Landingpage Teaser Segment
+      fields:
+        landingpageTeaser:
+          type: number
+          label: Position of Teaser Segment
+          description: Use 0 to disable the section
+        teaser1title:
+          type: text
+          label: Teaser 1 Title
+        teaser1text:
+          type: text
+          label: Teaser 1 Text
+        teaser1link:
+          type: text
+          label: Teaser 1 Link
+          fieldsize: half
+        teaser1label:
+          type: text
+          label: Teaser 1 Label
+          fieldsize: half
+        teaser2title:
+          type: text
+          label: Teaser 2 Title
+        teaser2text:
+          type: text
+          label: Teaser 2 Text
+        teaser2link:
+          type: text
+          label: Teaser 2 Link
+          fieldsize: half
+        teaser2label:
+          type: text
+          label: Teaser 2 Label
+          fieldsize: half
+
+    landingpageContrast:
+      type: fieldset
+      legend: Landingpage Contrast Segment
+      fields:
+        landingpageContrast:
+          type: number
+          label: Position of Contrast Segment
+          description: Use 0 to disable the section          
+        contrastTitle:
+          type: text
+          label: Title
+        contrastText:
+          type: textarea
+          label: Text
+        contrastLink:
+          type: text
+          label: Button Link
+        contrastLabel:
+          type: text
+          label: Button Label
+
+    landingpageNavi:
+      type: fieldset
+      legend: Landingpage Navigation Segment
+      fields:
+        landingpageNavi:
+          type: number
+          label: Position of Navi Segment
+          description: Use 0 to disable the section          
+        naviTitle:
+          type: text
+          label: Title for navigation
+        naviDepth:
+          type: number
+          label: How many navigation levels?
+
+    landingpageNews:
+      type: fieldset
+      legend: Landingpage News Segment      
+      fields:
+        landingpageNews:
+          type: number
+          label: Position of News Segment
+          description: Use 0 to disable the section          
+        newsHeadline:
+          type: text
+          label: Headline for news-segment
+          placeholder: News
+        newsFolder:
+          type: text
+          label: List entries from folder
+          placeholder: /blog
+          description: Add a path to a folder from which you want to list entries
+        newsLabel:
+          type: text
+          label: Label for read more link
+          placeholder: All News
+
+    fieldsetAuthor:
+      type: fieldset
+      legend: Article Author
+      fields:
+        authorPosition:
+          type: checkboxlist
+          label: Position of article author-line (top/bottom)
+          options:
+            top: Top
+            bottom: Bottom
+
+        authorIntro:
+          type: text
+          label: Author intro text
+          placeholder: Author
+
+    fieldsetDate:
+      type: fieldset
+      legend: Article Date
+      fields:
+        datePosition:
+          type: checkboxlist
+          label: Position of article date (top/bottom)
+          options:
+            top: Top
+            bottom: Bottom
+
+        dateIntro:
+          type: text
+          label: Date intro text
+          placeholder: Last Updated
+
+        dateFormat:
+          type: select
+          label: Date format
+          options:
+            'm/d/Y': 01/20/2020
+            'd.m.Y': 20.01.2020
+
+    fieldsetGitHub:
+      type: fieldset
+      legend: Article edit link
+      fields:
+        gitPosition:
+          type: checkboxlist
+          label: Position of the edit link (top/bottom)
+          options:
+            top: Top
+            bottom: Bottom
+
+        gitLink:
+          type: text
+          label: Link to repository
+          placeholder: https://github.com/typemill/documentation
+          help: Add the base url to the content repository (e.g. github).
+
+        editText:
+          type: text
+          label: Text/label for edit link
+          placeholder: edit on github
+
+    fieldsetChapters:
+      type: fieldset
+      legend: Navigations and Chapters
+      fields:
+        collapseNav:
+          type: checkbox
+          label: Collapse navigation
+          checkboxlabel: Collapse and expand navigation?
+        chapnum:
+          type: checkbox
+          label: Chapter Numbers
+          checkboxlabel: Show chapter numbers in navigation?
+
+    fieldsetfooter:
+      type: fieldset
+      legend: Footer columns
+      fields:
+        footercolumns:
+          type: checkboxlist
+          label: Activate footer columns
+          options:
+            footer1: Column 1
+            footer2: Column 2
+            footer3: Column 3     
+        footer1:
+          type: textarea
+          label: footer column 1 (use markdown)
+        footer2:
+          type: textarea
+          label: footer column 2 (use markdown)
+        footer3:
+          type: textarea
+          label: footer column 3 (use markdown)
+
+    fieldsetFonts:
+      type: fieldset
+      legend: Font Families
+      fields:
+        font:
+          type: select
+          label: General font-family
+          description: All fonts are system fonts with fallbacks
+          options:
+            BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif: sans-serif
+            georgia,times,serif: serif
+            courier,sans-serif: courier (sans-serif)
+            helvetica,sans-serif: helvetica (sans-serif)
+            avenir,sans-serif: avenir (sans-serif)
+            athelas,serif: athelas (serif) 
+            georgia,serif: georgia (serif)
+            times,serif: times (serif)
+            bodoni,serif: bodoni (serif)
+            calisto,serif: calisto (serif)
+            garamond,serif: garamond (serif)
+            baskerville,serif: baskerville (serif)
+        fontheadline:
+          type: select
+          label: Font-family for headlines
+          description: All fonts are system fonts with fallbacks
+          options:
+            BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif: sans-serif
+            georgia,times,serif: serif
+            courier,sans-serif: courier (sans-serif)
+            helvetica,sans-serif: helvetica (sans-serif)
+            avenir,sans-serif: avenir (sans-serif)
+            athelas,serif: athelas (serif) 
+            georgia,serif: georgia (serif)
+            times,serif: times (serif)
+            bodoni,serif: bodoni (serif)
+            calisto,serif: calisto (serif)
+            garamond,serif: garamond (serif)
+            baskerville,serif: baskerville (serif)
+        fontnavi:
+          type: select
+          label: Font-family for navigations
+          description: All fonts are system fonts with fallbacks
+          options:
+            BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif: sans-serif
+            georgia,times,serif: serif
+            courier,sans-serif: courier (sans-serif)
+            helvetica,sans-serif: helvetica (sans-serif)
+            avenir,sans-serif: avenir (sans-serif)
+            athelas,serif: athelas (serif) 
+            georgia,serif: georgia (serif)
+            times,serif: times (serif)
+            bodoni,serif: bodoni (serif)
+            calisto,serif: calisto (serif)
+            garamond,serif: garamond (serif)
+            baskerville,serif: baskerville (serif)
+    fieldsetColors:
+      type: fieldset
+      legend: Colors
+      fields:
+        brandcolorprimary:
+          type: text
+          label: Background color for body
+          placeholder: 'leightseagreen'
+          fieldsize: half
+        fontcolorprimary:
+          type: text
+          label: Font color for body
+          placeholder: 'white'
+          fieldsize: half
+        newsbackground:
+          type: text
+          label: Background color for news-box
+          placeholder: 'white'
+          fieldsize: half
+        newscolor:
+          type: text
+          label: Font color for news-box
+          placeholder: '#333'
+          fieldsize: half
+        brandcolortertiary:
+          type: text
+          label: Background color for buttons
+          placeholder: 'lightseagreen'
+          fieldsize: half
+        fontcolortertiary:
+          type: text
+          label: Font color for buttons
+          placeholder: '#F7F7F7'
+          fieldsize: half
+        bordercolortertiary:
+          type: text
+          label: Border color for buttons
+          placeholder: '#F7F7F7'
+          fieldsize: half
+        fontcolorlink:
+          type: text
+          label: Font color for content links
+          placeholder: '#007F7F'
+          fieldsize: half
+        brandcolorsecondary:
+          type: text
+          label: Background color for content
+          placeholder: '#f7f7f7'
+          fieldsize: half
+        fontcolorsecondary:
+          type: text
+          label: Font color for content
+          placeholder: '#333'
+          fieldsize: half
+        codebackground:
+          type: text
+          label: Background color for code
+          placeholder: '#ddd'
+          fieldsize: half
+        codecolor:
+          type: text
+          label: Font color for code
+          placeholder: '#333'
+          fieldsize: half
+        contentnavihoverbackground:
+          type: text
+          label: Background color for hover of content navigation
+          placeholder: 'lightseagreen'
+          fieldsize: half
+        contentnavihovercolor:
+          type: text
+          label: Font color for hover of content navigation
+          placeholder: 'white'
+          fieldsize: half
+        thinbordercolor:
+          type: text
+          label: Thin border color
+          placeholder: 'lightgray'
+          description: Used for content navigation, table and horizontal line
+          fieldsize: half
+        noticecolors:
+          type: checkbox
+          label: Color for notices
+          checkboxlabel: Use grayscale color schema for notices
+          fieldsize: half
