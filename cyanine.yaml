@@ -1,5 +1,5 @@
 name: Cyanine Theme
-version: 1.1.3
+version: 1.1.10
 description: Cyanine is a modern and flexible multi-purpose theme and the standard theme for typemill. 
 author: Trendschau
 homepage: https://trendschau.net
@@ -26,20 +26,27 @@ forms:
         large: Large
         full: Full Width
 
+    posts:
+      type: fieldset
+      legend: Configure Posts
+      fields:
+        blogimage:
+          type: checkbox
+          label: Post-Images
+          checkboxlabel: Generally show hero images in all lists of posts
+
     blog:
       type: checkbox
-      checkboxlabel: Activate a List of Posts on Homepage
+      checkboxlabel: Activate a list of posts on the homepage
 
-    blogdetails:
+    bloghomepage:
       type: fieldset
-      legend: Configure List of Posts
+      legend: Posts on Homepage
       fields:
-
         blogintro:
           type: checkbox
-          label: Intro Page
-          checkboxlabel: Show the content of the homepage before the list of posts
-
+          label: Intro Content
+          checkboxlabel: Show the content of the homepage before the posts get listed
         blogfolder:
           type: text
           label: Enter the folder path with the posts
@@ -47,7 +54,7 @@ forms:
 
     landingpage:
       type: checkbox
-      checkboxlabel: Activate a Landing Page on Homepage
+      checkboxlabel: Activate a landing page with segments on the homepage
 
     landingpageIntro:
       type: fieldset
@@ -74,6 +81,18 @@ forms:
           type: text
           label: Label for startbutton
           placeholder: my label
+        introFullsize:
+          type: checkbox
+          label: Full Screen
+          checkboxlabel: Use full screen for the intro segment
+        introImage:
+          type: checkbox
+          label: Background Image
+          checkboxlabel: Use the hero-image from the homepage as background image
+        introImageOpacity:
+          type: text
+          label: Opacity for background image
+          placeholder: 0.8
 
     landingpageInfo:
       type: fieldset
@@ -122,6 +141,20 @@ forms:
         teaser2label:
           type: text
           label: Teaser 2 Label
+          fieldsize: half
+        teaser3title:
+          type: text
+          label: Teaser 3 Title
+        teaser3text:
+          type: text
+          label: Teaser 3 Text
+        teaser3link:
+          type: text
+          label: Teaser 3 Link
+          fieldsize: half
+        teaser3label:
+          type: text
+          label: Teaser 3 Label
           fieldsize: half
 
     landingpageContrast:
@@ -243,18 +276,60 @@ forms:
           label: Text/label for edit link
           placeholder: edit on github
 
-    fieldsetChapters:
+        editIcon:
+          type: checkbox
+          label: Icon
+          checkboxlabel: use an edit-icon instead of text
+
+    fieldsetPrint:
+      type: fieldset
+      legend: Print Button
+      fields:
+        printPosition:
+          type: checkboxlist
+          label: Position of the print-button (top/bottom)
+          options:
+            top: Top
+            bottom: Bottom
+
+        printText:
+          type: text
+          label: Text/label for print-button
+          placeholder: print
+
+        printIcon:
+          type: checkbox
+          label: Icon
+          checkboxlabel: use a print-icon instead of text
+
+    fieldsetNavigations:
       type: fieldset
       legend: Navigations and Chapters
       fields:
-        collapseNav:
-          type: checkbox
-          label: Collapse navigation
-          checkboxlabel: Collapse and expand navigation?
         chapnum:
           type: checkbox
           label: Chapter Numbers
           checkboxlabel: Show chapter numbers in navigation?
+        collapseNav:
+          type: checkbox
+          label: Collapse navigation
+          checkboxlabel: Collapse and expand navigation?
+        expand:
+          type: text
+          label: Label for expand button
+          placeholder: expand navigation
+        collapse:
+          type: text
+          label: Label for collapse button
+          placeholder: collapse navigation
+        next:
+          type: text
+          label: Label for next link
+          placeholder: next
+        previous:
+          type: text
+          label: Label for previous link
+          placeholder: previous
 
     fieldsetfooter:
       type: fieldset
@@ -266,7 +341,7 @@ forms:
           options:
             footer1: Column 1
             footer2: Column 2
-            footer3: Column 3     
+            footer3: Column 3
         footer1:
           type: textarea
           label: footer column 1 (use markdown)
@@ -276,6 +351,19 @@ forms:
         footer3:
           type: textarea
           label: footer column 3 (use markdown)
+
+
+    fieldsetcopyrightline:
+      type: fieldset
+      legend: Copyright Line
+      fields:
+        copyrightline:
+          type: checkbox
+          checkboxlabel: Overwrite the copyright line
+        copyrightlinetext:
+          type: textarea
+          label: Overwrite Copyright Line (use markdown)
+          description: If overwrite the copyright line with the link to typemill, then please support Typemill e.g. with a link in the imprint, a blog-post, a social media mention or a recommendation.
 
     fieldsetFonts:
       type: fieldset
