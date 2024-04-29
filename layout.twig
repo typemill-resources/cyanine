@@ -13,10 +13,9 @@
 		{{ assets.renderMeta() }}
 
 		{% block stylesheets %}
-
-			{{ assets.activateTachyons() }}
     
-			<link rel="stylesheet" href="{{ base_url }}/themes/cyanine/css/style.css?20220108" />
+			<link rel="stylesheet" href="{{ base_url }}/themes/cyanine/css/tachyons.min.css?20220527" />
+			<link rel="stylesheet" href="{{ base_url }}/themes/cyanine/css/style.css?20220527" />
 			
 			<style>
 
@@ -75,10 +74,10 @@
 				/*******************
 				**      COLORS    **
 				*******************/
-				body,.landingpagecontrast,.account{
+				body,.landingpagecontrast,.account,form input[type="submit"],from button,form .button{
 					background: {{ settings.themes.cyanine.brandcolorprimary|default('lightseagreen') }};
 				}
-				main, footer, .landingpageintro, .landingpageinfo, .landingpageteaser, .landingpagenavi, .landingpagecontrast, .landingpagenews{
+				main, footer, .landingpageintro, .landingpageinfo, .landingpageteaser, .landingpagenavi, .landingpagecontrast, .landingpagenews,form input[type="submit"],from button,form .button{
 					border-color: {{ settings.themes.cyanine.brandcolorprimary|default('lightseagreen') }};
 				}
 				.landingpagecontrast a, .landingpagecontrast a:link, .landingpagecontrast a:visited{
@@ -86,7 +85,8 @@
 				}
 				body,.landingpagecontrast, a,
 				.landingpagecontrast a, .landingpagecontrast a:link, .landingpagecontrast a:visited,
-				.account, .account a, .account a:link, .account a:hover, .account a:focus, .account a:visited{
+				.account, .account a, .account a:link, .account a:hover, .account a:focus, .account a:visited,
+				form input[type="submit"],from button,form .button{
 					color: {{ settings.themes.cyanine.fontcolorprimary|default('#F7F7F7') }};
 				}
 				.landingpagecontrast a, .landingpagecontrast a:link, .landingpagecontrast a:visited{
@@ -138,7 +138,7 @@
 				.landingpagenews li, .newsbox{
 					background: {{ settings.themes.cyanine.newsbackground|default('white') }};
 				}
-				.landingpagenews li a{
+				.landingpagenews li a, .newsbox, .newsbox a{
 					color: {{ settings.themes.cyanine.newscolor|default('#333') }};
 				}
 				.mainnavigation li, tr, hr, .notice4{
@@ -215,7 +215,7 @@
 
 		{% block javascripts %}
 
-			<script src="{{ base_url }}/system/author/js/typemillutils.js?20220108"></script>
+			<script src="{{ base_url }}/system/typemill/author/js/typemillutils.js?20220108"></script>
 			<script>typemillUtilities.start();</script>
 			
 			{% if settings.themes.cyanine.collapseNav %}

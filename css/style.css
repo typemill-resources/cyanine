@@ -374,6 +374,10 @@ button.play-video::after {
 	display: block;
 	width: 100%;
 }
+.grid-footer{
+  grid-column: 1 / -1;
+}
+
 .f-large{
 	font-size: 4rem;
 }
@@ -407,6 +411,9 @@ button.play-video::after {
 .indent-l-6{ padding-left:5rem; }
 .b--solid-hover:hover,.b--solid-hover:focus,.b--solid-hover:active{
 	border-style: solid;
+}
+.flex-grow{
+	flex-grow: 1;
 }
 
 /*************************
@@ -486,6 +493,7 @@ button.play-video::after {
 
 form{
 	width: 100%;
+	max-width:  800px;
 	border: none;
 	margin: 20px 0 20px 0;
 	padding: 0 0 0 0;
@@ -520,11 +528,11 @@ form input[type="submit"],form button,form .button{
 	font-size: 1em;
 	border: 0;
 	margin-top: 1.5em;
-	color: #fff;
-	background: rgba(0,0,0,0);
+	width: 100%;
+	padding: 15px;
 }
 form input[type="submit"]:hover,form button:hover,.button:hover{
-	background: rgba(0, 0, 0, 0.8);
+	opacity: .8;
 }
 
 
