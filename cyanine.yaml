@@ -1,6 +1,6 @@
 name: Cyanine Theme
-version: 2.1.0
-description: Cyanine is a modern and flexible multi-purpose theme and the standard theme for typemill. 
+version: 2.3.3
+description: 'Cyanine is a modern and flexible multi-purpose theme and the standard theme for Typemill.'
 author: Trendschau
 homepage: https://trendschau.net
 license: MIT
@@ -41,53 +41,53 @@ settings:
   footer3: '### Footer 3'
 
 readymades:
-  darkdemo:
-    name: 'Dark Demo' 
-    description: 'A dark layout with a landingpage and a background animation on the startscreen.' 
+  standard: 
+    name: 'Standard'
+    description: 'The standard layout with a landingpage and the cyan/teal-brand-colors of Typemill.'
     settings:
       layoutsize: standard
       blogimage: true
       landingpage: 'on'
       introPosition: '1'
       introFullsize: true
-      introTitle: 'Typemill is a flat-file-cms for relevant content. Create websites and ebooks for documentations, manuals, reports, handbooks, guidelines, textbooks, and all kind of content-projects.'
-      introMarkdown: 'This demo website grants access to all essential features , with the exception of user and license management. It also includes additional plugins such as the ebook-plugin. The demo environment resets every 30 minutes. Log in using the credentials "demouser" and "demopass".'
+      introTitle: 'Publishing in Your Pocket'
+      introMarkdown: 'Typemill is the most lightweight solution to publish websites, pdfs and epubs. Own your data and create websites, documentations, manuals, handbooks, and more.'
       introButtonLink: /tm/login
-      introButtonLabel: 'Login to the Demo'
+      introButtonLabel: 'Login'
       introImageOpacity: '0'
       introImage: true
-      infoPosition: '0'
-      infoMarkdown: "## A Flat File CMS for Publishers\n\n1. **Publishers** love Typemill, because you can create eBooks from your Typemill website with just some clicks. [Read more](/publishers)\n2. **A flat-file cms** does not need a database because it stores all content in markdown files. Want to get your content? Just download the files. [Read more](/typemill/why-flat-file)\n3. **Markdown** is an easy markup language for authors. And the visual markdown editor of Typemill makes it easy for beginners to start. [Read more](/writers/markdown)"
-      teaserPosition: '0'
+      infoPosition: '2'
+      infoMarkdown: "## Popular Solutions\n\n1. **Documentations and Manuals:** Small companies use Typemill to create documentation and manuals for both digital and physical products. Did you know that you can now provide machine manuals as PDFs and websites? With Typemill, you can do both effortlessly.\n2. **Reports and handbooks:** Small organizations rely on Typemill for efficient reporting. Save time by producing your report as both a website and a PDF: write once, publish twice!\n3. **Fast websites:** Typemill provides an incredible performance and an awesome author experience. Why struggle with complex technology when you can get your things done with Typemill quickly?"
+      teaserPosition: '3'
       teaser1title: Typemill
       teaser1text: 'Visit the Typemill website'
       teaser1link: 'https://typemill.net'
       teaser1label: 'Visit Typemill'
       teaser2title: Plugins
-      teaser2text: 'Use some cool plugins.'
+      teaser2text: 'Use some helpful plugins.'
       teaser2link: 'https://plugins.typemill.net'
       teaser2label: 'Choose Plugins'
       teaser3title: Themes
       teaser3text: 'Try out some beautiful themes.'
       teaser3link: 'https://themes.typemill.net'
       teaser3label: 'Choose Themes'
-      contrastPosition: '2'
+      contrastPosition: '4'
       contrastTitle: 'Typemill Newsletter'
-      contrastText: 'Every month on the 15th a new release of Typemill is published . Stay in the loop and subscribe to the newsletter.'
+      contrastText: 'Every month on the 15th a new release of Typemill is published. Stay in the loop and subscribe to the newsletter.'
       contrastLink: 'https://typemill.net/news'
       contrastLabel: 'Visit the Newsletter'
-      naviPosition: '3'
+      naviPosition: '5'
       naviTitle: 'Table of Contents'
       naviDepth: '2'
-      newsPosition: '4'
-      newsHeadline: Blog
-      newsFolder: /blog
-      newsLabel: 'All posts'
+      newsPosition: '6'
+      newsHeadline: News
+      newsFolder: /news
+      newsLabel: 'All news'
       authorPosition:
-          - bottom
+          - top
       authorIntro: Author
       datePosition:
-          - bottom
+          - top
       dateIntro: 'Last updated'
       dateFormat: d.m.Y
       collapseNav: true
@@ -95,9 +95,86 @@ readymades:
           - footer1
           - footer2
           - footer3
-      footer1: "### Typemill Version 2\n\nTypemill is a lightweight, flat-file CMS designed for simple, fast, and flexible website and eBook creation using Markdown. Read all about the [feature highlights of Typemill](https://typemill.net/typemill/features) version 2."
-      footer2: "### Resources\n\n* [Newsletter](https://typemill.net/news)\n* [Typemill on GitHub](https://github.com/typemill/typemill)\n* [Theme Directory](https://themes.typemill.net)\n* [Plugin Directory](https://plugins.typemill.net)\n* [Discussions](https://github.com/typemill/typemill/discussions)\n* [Mastodon](https://mastodon.social/@typemill)"
-      footer3: "### Product\n\n* [Pricing](https://typemill.net/license/buy)\n* [Terms & Conditions](https://typemill.net/license/terms-and-conditions)\n* [License Agreement](https://typemill.net/license/license-agreement)\n* [Privacy Policy](https://typemill.net/info/privacy)\n* [Trademark Policy](https://typemill.net/info/trademark-policy)\n* [Imprint](https://typemill.net/info/imprint)"
+      footer1: "### Typemill\n\nTypemill is a lightweight, flat-file CMS designed for simple, fast, and flexible website and eBook creation using Markdown. [Visit Typemill](https://typemill.net)"
+      footer2: "### Resources\n\n* [Typemill on GitHub](https://github.com/typemill/typemill)\n* [Theme Directory](https://themes.typemill.net)\n* [Plugin Directory](https://plugins.typemill.net)\n"
+      footer3: "### News\n\n* [Newsletter](https://typemill.net/news)\n* [Discussions](https://github.com/typemill/typemill/discussions)\n* [Mastodon](https://mastodon.social/@typemill)\n* [Twitter](https://twitter.com/typemill)"
+      font: ''
+      fontheadline: ''
+      fontnavi: ''
+      brandcolorprimary: ''
+      fontcolorprimary: ''
+      newsbackground: ''
+      newscolor: ''
+      brandcolortertiary: ''
+      fontcolortertiary: ''
+      bordercolortertiary: ''
+      fontcolorlink: ''
+      brandcolorsecondary: ''
+      fontcolorsecondary: ''
+      codebackground: ''
+      codecolor: ''
+      contentnavihoverbackground: ''
+      contentnavihovercolor: ''
+      thinbordercolor: ''
+      noticecolors: true
+      customcss: ".landingpageinfo ol{\n  text-align:left;\n}"
+  darkdemo:
+    name: 'Dark Demo' 
+    description: 'A dark layout with a landingpage and a background animation on the intro-screen.' 
+    settings:
+      layoutsize: standard
+      blogimage: true
+      landingpage: 'on'
+      introPosition: '1'
+      introFullsize: true
+      introTitle: 'Publishing in Your Pocket'
+      introMarkdown: 'Typemill is the most lightweight solution to publish websites, pdfs and epubs. Own your data and create websites, documentations, manuals, handbooks, and more.'
+      introButtonLink: /tm/login
+      introButtonLabel: 'Login'
+      introImageOpacity: '0'
+      introImage: true
+      infoPosition: '2'
+      infoMarkdown: "## Popular Solutions\n\n1. **Documentations and Manuals:** Small companies use Typemill to create documentation and manuals for both digital and physical products. Did you know that you can now provide machine manuals as PDFs and websites? With Typemill, you can do both effortlessly.\n2. **Reports and handbooks:** Small organizations rely on Typemill for efficient reporting. Save time by producing your report as both a website and a PDF: write once, publish twice!\n3. **Fast websites:** Typemill provides an incredible performance and an awesome author experience. Why struggle with complex technology when you can get your things done with Typemill quickly?"
+      teaserPosition: '3'
+      teaser1title: Typemill
+      teaser1text: 'Visit the Typemill website'
+      teaser1link: 'https://typemill.net'
+      teaser1label: 'Visit Typemill'
+      teaser2title: Plugins
+      teaser2text: 'Use some helpful plugins.'
+      teaser2link: 'https://plugins.typemill.net'
+      teaser2label: 'Choose Plugins'
+      teaser3title: Themes
+      teaser3text: 'Try out some beautiful themes.'
+      teaser3link: 'https://themes.typemill.net'
+      teaser3label: 'Choose Themes'
+      contrastPosition: '4'
+      contrastTitle: 'Typemill Newsletter'
+      contrastText: 'Every month on the 15th a new release of Typemill is published. Stay in the loop and subscribe to the newsletter.'
+      contrastLink: 'https://typemill.net/news'
+      contrastLabel: 'Visit the Newsletter'
+      naviPosition: '5'
+      naviTitle: 'Table of Contents'
+      naviDepth: '2'
+      newsPosition: '6'
+      newsHeadline: News
+      newsFolder: /news
+      newsLabel: 'All news'
+      authorPosition:
+          - top
+      authorIntro: Author
+      datePosition:
+          - top
+      dateIntro: 'Last updated'
+      dateFormat: d.m.Y
+      collapseNav: true
+      footercolumns:
+          - footer1
+          - footer2
+          - footer3
+      footer1: "### Typemill\n\nTypemill is a lightweight, flat-file CMS designed for simple, fast, and flexible website and eBook creation using Markdown. [Visit Typemill](https://typemill.net)"
+      footer2: "### Resources\n\n* [Typemill on GitHub](https://github.com/typemill/typemill)\n* [Theme Directory](https://themes.typemill.net)\n* [Plugin Directory](https://plugins.typemill.net)\n"
+      footer3: "### News\n\n* [Newsletter](https://typemill.net/news)\n* [Discussions](https://github.com/typemill/typemill/discussions)\n* [Mastodon](https://mastodon.social/@typemill)\n* [Twitter](https://twitter.com/typemill)"
       font: 'BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif'
       fontheadline: 'BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif'
       fontnavi: 'BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif'
@@ -117,54 +194,54 @@ readymades:
       contentnavihovercolor: '#414248'
       thinbordercolor: '#d0cfcd'
       noticecolors: true
-      customcss: ".landingpageintro{\n  text-align:left;\n  background:transparent;\n}\n.landingpageintro h1{\n  font-size: 2rem;\n}\n.landingpageintro, .landingpagecontrast, .landingpagenavi, .landingpagenews, main, footer{\n  border-bottom: 1px solid #6D6D6D;\n}\n.landingpagenavi li, .navigation li{\n  border: 0px;\n}\n.landingpageintro::before {\n  position: absolute;\n  content: '';\n  left: 5%;\n  top: 5%;\n  bottom: 5%;\n  right: 5%;\n  background: #38393F;\n  border-radius: 62% 47% 82% 35% / 45% 45% 80% 66%;\n  will-change: border-radius, transform, opacity;\n  animation: sliderShape 20s linear infinite;\n  display: block;\n  z-index: -1;\n  -webkit-animation: sliderShape 20s linear infinite;\n}\n@keyframes sliderShape{\n  0%,100%{\n  border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;\n    transform: translate3d(0,0,0) rotateZ(0.01deg);\n  }\n  34%{\n      border-radius: 70% 30% 46% 54% / 30% 29% 71% 70%;\n    transform:  translate3d(0,5px,0) rotateZ(0.01deg);\n  }\n  50%{\n    transform: translate3d(0,0,0) rotateZ(0.01deg);\n  }\n  67%{\n    border-radius: 100% 60% 60% 100% / 100% 100% 60% 60% ;\n    transform: translate3d(0,-3px,0) rotateZ(0.01deg);\n  }\n}"
+      customcss: ".landingpageintro{\n  text-align:left;\n  background:transparent;\n}\n.landingpageinfo ol{\n  text-align:left;\n}\n.landingpageintro h1{\n  font-size: 2rem;\n}\n.landingpageintro, .landingpagecontrast, .landingpagenavi, .landingpagenews, main, footer{\n  border-bottom: 1px solid #6D6D6D;\n}\n.landingpagenavi li, .navigation li{\n  border: 0px;\n}\n.landingpageintro::before {\n  position: absolute;\n  content: '';\n  left: 5%;\n  top: 5%;\n  bottom: 5%;\n  right: 5%;\n  background: #38393F;\n  border-radius: 62% 47% 82% 35% / 45% 45% 80% 66%;\n  will-change: border-radius, transform, opacity;\n  animation: sliderShape 20s linear infinite;\n  display: block;\n  z-index: -1;\n  -webkit-animation: sliderShape 20s linear infinite;\n}\n@keyframes sliderShape{\n  0%,100%{\n  border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;\n    transform: translate3d(0,0,0) rotateZ(0.01deg);\n  }\n  34%{\n      border-radius: 70% 30% 46% 54% / 30% 29% 71% 70%;\n    transform:  translate3d(0,5px,0) rotateZ(0.01deg);\n  }\n  50%{\n    transform: translate3d(0,0,0) rotateZ(0.01deg);\n  }\n  67%{\n    border-radius: 100% 60% 60% 100% / 100% 100% 60% 60% ;\n    transform: translate3d(0,-3px,0) rotateZ(0.01deg);\n  }\n}"
   lightdemo:
     name: 'Light Demo' 
-    description: 'A light layout with a landingpage and a background animation on the startscreen.' 
+    description: 'A light layout with a landingpage and a background animation on the intro-screen.' 
     settings:
       layoutsize: standard
       blogimage: true
       landingpage: 'on'
       introPosition: '1'
       introFullsize: true
-      introTitle: 'Typemill is a flat-file-cms for relevant content. Create websites and ebooks for documentations, manuals, reports, handbooks, guidelines, textbooks, and all kind of content-projects.'
-      introMarkdown: 'This demo website grants access to all essential features , with the exception of user and license management. It also includes additional plugins such as the ebook-plugin. The demo environment resets every 30 minutes. Log in using the credentials "demouser" and "demopass".'
+      introTitle: 'Publishing in Your Pocket'
+      introMarkdown: 'Typemill is the most lightweight solution to publish websites, pdfs and epubs. Own your data and create websites, documentations, manuals, handbooks, and more.'
       introButtonLink: /tm/login
-      introButtonLabel: 'Login to the Demo'
+      introButtonLabel: 'Login'
       introImageOpacity: '0'
       introImage: true
-      infoPosition: '0'
-      infoMarkdown: "## A Flat File CMS for Publishers\n\n1. **Publishers** love Typemill, because you can create eBooks from your Typemill website with just some clicks. [Read more](/publishers)\n2. **A flat-file cms** does not need a database because it stores all content in markdown files. Want to get your content? Just download the files. [Read more](/typemill/why-flat-file)\n3. **Markdown** is an easy markup language for authors. And the visual markdown editor of Typemill makes it easy for beginners to start. [Read more](/writers/markdown)"
-      teaserPosition: '0'
+      infoPosition: '2'
+      infoMarkdown: "## Popular Solutions\n\n1. **Documentations and Manuals:** Small companies use Typemill to create documentation and manuals for both digital and physical products. Did you know that you can now provide machine manuals as PDFs and websites? With Typemill, you can do both effortlessly.\n2. **Reports and handbooks:** Small organizations rely on Typemill for efficient reporting. Save time by producing your report as both a website and a PDF: write once, publish twice!\n3. **Fast websites:** Typemill provides an incredible performance and an awesome author experience. Why struggle with complex technology when you can get your things done with Typemill quickly?"
+      teaserPosition: '3'
       teaser1title: Typemill
       teaser1text: 'Visit the Typemill website'
       teaser1link: 'https://typemill.net'
       teaser1label: 'Visit Typemill'
       teaser2title: Plugins
-      teaser2text: 'Use some cool plugins.'
+      teaser2text: 'Use some helpful plugins.'
       teaser2link: 'https://plugins.typemill.net'
       teaser2label: 'Choose Plugins'
       teaser3title: Themes
       teaser3text: 'Try out some beautiful themes.'
       teaser3link: 'https://themes.typemill.net'
       teaser3label: 'Choose Themes'
-      contrastPosition: '2'
+      contrastPosition: '4'
       contrastTitle: 'Typemill Newsletter'
-      contrastText: 'Every month on the 15th a new release of Typemill is published . Stay in the loop and subscribe to the newsletter.'
+      contrastText: 'Every month on the 15th a new release of Typemill is published. Stay in the loop and subscribe to the newsletter.'
       contrastLink: 'https://typemill.net/news'
       contrastLabel: 'Visit the Newsletter'
-      naviPosition: '3'
+      naviPosition: '5'
       naviTitle: 'Table of Contents'
       naviDepth: '2'
-      newsPosition: '4'
-      newsHeadline: Blog
-      newsFolder: /blog
-      newsLabel: 'All posts'
+      newsPosition: '6'
+      newsHeadline: News
+      newsFolder: /news
+      newsLabel: 'All news'
       authorPosition:
-          - bottom
+          - top
       authorIntro: Author
       datePosition:
-          - bottom
+          - top
       dateIntro: 'Last updated'
       dateFormat: d.m.Y
       collapseNav: true
@@ -172,9 +249,9 @@ readymades:
           - footer1
           - footer2
           - footer3
-      footer1: "### Typemill Version 2\n\nTypemill is a lightweight, flat-file CMS designed for simple, fast, and flexible website and eBook creation using Markdown. Read all about the [feature highlights of Typemill](https://typemill.net/typemill/features) version 2."
-      footer2: "### Resources\n\n* [Newsletter](https://typemill.net/news)\n* [Typemill on GitHub](https://github.com/typemill/typemill)\n* [Theme Directory](https://themes.typemill.net)\n* [Plugin Directory](https://plugins.typemill.net)\n* [Discussions](https://github.com/typemill/typemill/discussions)\n* [Mastodon](https://mastodon.social/@typemill)"
-      footer3: "### Product\n\n* [Pricing](https://typemill.net/license/buy)\n* [Terms & Conditions](https://typemill.net/license/terms-and-conditions)\n* [License Agreement](https://typemill.net/license/license-agreement)\n* [Privacy Policy](https://typemill.net/info/privacy)\n* [Trademark Policy](https://typemill.net/info/trademark-policy)\n* [Imprint](https://typemill.net/info/imprint)"
+      footer1: "### Typemill\n\nTypemill is a lightweight, flat-file CMS designed for simple, fast, and flexible website and eBook creation using Markdown. [Visit Typemill](https://typemill.net)"
+      footer2: "### Resources\n\n* [Typemill on GitHub](https://github.com/typemill/typemill)\n* [Theme Directory](https://themes.typemill.net)\n* [Plugin Directory](https://plugins.typemill.net)\n"
+      footer3: "### News\n\n* [Newsletter](https://typemill.net/news)\n* [Discussions](https://github.com/typemill/typemill/discussions)\n* [Mastodon](https://mastodon.social/@typemill)\n* [Twitter](https://twitter.com/typemill)"
       font: 'BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif'
       fontheadline: 'BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif'
       fontnavi: 'BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif'
@@ -194,7 +271,79 @@ readymades:
       contentnavihovercolor: '#F0EFF0'
       thinbordercolor: '#d0cfcd'
       noticecolors: true
-      customcss: ".landingpageintro{\n  text-align:left;\n  background:transparent;\n}\n.landingpageintro h1{\n  font-size: 2rem;\n}\n.landingpageintro, .landingpagecontrast, .landingpagenavi, .landingpagenews, main, footer{\n  border-bottom: 1px solid #6D6D6D;\n}\n.landingpagenavi li, .navigation li{\n  border: 0px;\n}\nul.landingpagenavi, ul.navigation{\n  background: #d0cfcd;\n}\n.navigation a, .navigation a:hover, .navigation a:focus, .navigation a:active{\n  color: #414248;\n}\n.landingpageintro::before {\n  position: absolute;\n  content: '';\n  left: 5%;\n  top: 5%;\n  bottom: 5%;\n  right: 5%;\n  background: #d0cfcd;\n  border-radius: 62% 47% 82% 35% / 45% 45% 80% 66%;\n  will-change: border-radius, transform, opacity;\n  animation: sliderShape 20s linear infinite;\n  display: block;\n  z-index: -1;\n  -webkit-animation: sliderShape 20s linear infinite;\n}\n@keyframes sliderShape{\n  0%,100%{\n  border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;\n    transform: translate3d(0,0,0) rotateZ(0.01deg);\n  }\n  34%{\n      border-radius: 70% 30% 46% 54% / 30% 29% 71% 70%;\n    transform:  translate3d(0,5px,0) rotateZ(0.01deg);\n  }\n  50%{\n    transform: translate3d(0,0,0) rotateZ(0.01deg);\n  }\n  67%{\n    border-radius: 100% 60% 60% 100% / 100% 100% 60% 60% ;\n    transform: translate3d(0,-3px,0) rotateZ(0.01deg);\n  }\n}"
+      customcss: ".landingpageintro{\n  text-align:left;\n  background:transparent;\n}\n.landingpageinfo ol{\n  text-align:left;\n}\n.landingpageintro h1{\n  font-size: 2rem;\n}\n.landingpageintro, .landingpagecontrast, .landingpagenavi, .landingpagenews, main, footer{\n  border-bottom: 1px solid #6D6D6D;\n}\n.landingpagenavi li, .navigation li{\n  border: 0px;\n}\nul.landingpagenavi, ul.navigation{\n  background: #d0cfcd;\n}\n.navigation a, .navigation a:hover, .navigation a:focus, .navigation a:active{\n  color: #414248;\n}\n.landingpageintro::before {\n  position: absolute;\n  content: '';\n  left: 5%;\n  top: 5%;\n  bottom: 5%;\n  right: 5%;\n  background: #d0cfcd;\n  border-radius: 62% 47% 82% 35% / 45% 45% 80% 66%;\n  will-change: border-radius, transform, opacity;\n  animation: sliderShape 20s linear infinite;\n  display: block;\n  z-index: -1;\n  -webkit-animation: sliderShape 20s linear infinite;\n}\n@keyframes sliderShape{\n  0%,100%{\n  border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;\n    transform: translate3d(0,0,0) rotateZ(0.01deg);\n  }\n  34%{\n      border-radius: 70% 30% 46% 54% / 30% 29% 71% 70%;\n    transform:  translate3d(0,5px,0) rotateZ(0.01deg);\n  }\n  50%{\n    transform: translate3d(0,0,0) rotateZ(0.01deg);\n  }\n  67%{\n    border-radius: 100% 60% 60% 100% / 100% 100% 60% 60% ;\n    transform: translate3d(0,-3px,0) rotateZ(0.01deg);\n  }\n}"
+  newspage:
+    name: 'Newspage' 
+    description: 'A simple layout with firebrick-colors and with a news-list on the startpage.' 
+    settings:
+      layoutsize: standard
+      blogimage: true
+      blog: true
+      blogfolder: /news
+      blogintro: false
+      landingpage: false
+      introPosition: '0'
+      infoPosition: '0'
+      teaserPosition: '0'
+      contrastPosition: '0'
+      naviPosition: '0'
+      introFullsize: false
+      introTitle: ''
+      introMarkdown: ''
+      introButtonLink: ''
+      introButtonLabel: ''
+      infoMarkdown: ''
+      teaser1title: ''
+      teaser1text: ''
+      teaser1link: ''
+      teaser1label: ''
+      teaser2title: ''
+      teaser2text: ''
+      teaser2link: ''
+      teaser2label: ''
+      teaser3title: ''
+      teaser3text: ''
+      teaser3link: ''
+      teaser3label: ''
+      contrastTitle: ''
+      contrastText: ''
+      contrastLink: ''
+      contrastLabel: ''
+      naviTitle: ''
+      authorPosition:
+        - top
+      authorIntro: Author
+      datePosition:
+        - top
+      dateIntro: 'Last updated'
+      dateFormat: d.m.Y
+      collapseNav: true
+      footercolumns:
+        - footer1
+        - footer2
+        - footer3
+      footer1: "### Typemill\n\nTypemill is a lightweight, flat-file CMS designed for simple, fast, and flexible website and eBook creation using Markdown. [Visit Typemill](https://typemill.net)"
+      footer2: "### Resources\n\n* [Typemill on GitHub](https://github.com/typemill/typemill)\n* [Theme Directory](https://themes.typemill.net)\n* [Plugin Directory](https://plugins.typemill.net)\n"
+      footer3: "### News\n\n* [Newsletter](https://typemill.net/news)\n* [Discussions](https://github.com/typemill/typemill/discussions)\n* [Mastodon](https://mastodon.social/@typemill)\n* [Twitter](https://twitter.com/typemill)"
+      font: 'georgia,times,serif'
+      fontheadline: 'BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif'
+      fontnavi: 'BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif'
+      brandcolorprimary: firebrick
+      fontcolorprimary: ''
+      newsbackground: ''
+      newscolor: ''
+      brandcolortertiary: firebrick
+      fontcolortertiary: ''
+      bordercolortertiary: white
+      fontcolorlink: firebrick
+      brandcolorsecondary: white
+      fontcolorsecondary: ''
+      codebackground: ''
+      codecolor: ''
+      contentnavihoverbackground: firebrick
+      contentnavihovercolor: ''
+      thinbordercolor: ''
+      noticecolors: 'on'
 
 forms:
   fields:
@@ -213,43 +362,66 @@ forms:
 
     bloghomepage:
       type: fieldset
-      legend: Post Configuration (Blog or News)
+      legend: 'Post Configuration (Blog or News)'
       fields:
         blogimage:
           type: checkbox
-          label: Hero Images
-          checkboxlabel: Show hero images in all lists of posts
+          label: 'Hero Images'
+          checkboxlabel: 'Show hero images in all lists of posts'
         blog:
           type: checkbox
-          label: Homepage Posts
-          checkboxlabel: Show posts on the homepage
+          label: 'Posts on Homepage'
+          checkboxlabel: 'Show posts on the homepage'
         blogfolder:
           type: text
-          label: Homepage Posts Folder
-          placeholder: /blog
-          description: Add the relative pasts to the folder with posts that should appear on the homepage
+          label: 'Folder for Posts on Homepage'
+          placeholder: '/blog'
+          description: 'Add the relative pasts to the folder with posts that should appear on the homepage'
         blogintro:
           type: checkbox
-          label: Homepage Intro Text
-          checkboxlabel: Show the text of the homepage before the list of posts
+          label: 'Homepage Intro Text'
+          checkboxlabel: 'Show the text of the homepage and list posts below'
 
     landing:
       type: fieldset
-      legend: Landingpage
+      legend: 'Landingpage'
       fields:
         landingpage:
           type: checkbox
-          checkboxlabel: Activate a landing page with segments on the homepage
+          checkboxlabel: 'Activate a landing page with different segments on the homepage. Configure the segments in the fieldsets below.'
+        introPosition:
+          type: number
+          label: 'Position of Intro Segment'
+          description: 'A intro segment with a title, a slogan, a call to action, and a background-image. Use 0 to disable this section.'
+          css: 'lg:w-full'
+        infoPosition:
+          type: number
+          label: 'Position of Info Segment'
+          description: 'A content segment with pure makrdown. Use 0 to disable the section.'
+          css: 'lg:w-full'
+        teaserPosition:
+          type: number
+          label: 'Position of Teaser Segment'
+          description: 'Use up to three horizontal teasers with call to action buttons. Use 0 to disable the section.'
+          css: 'lg:w-full'
+        contrastPosition:
+          type: number
+          label: 'Position of Contrast Segment'
+          description: 'A content segment wiht pure markdown and inverted colors for contrast. Use 0 to disable the section.'
+        naviPosition:
+          type: number
+          label: 'Position of Navigation Segment'
+          description: 'A segment with the navigation/table of contents. Use 0 to disable the section.'
+        newsPosition:
+          type: number
+          label: 'Position of News Segment'
+          description: 'A segment with three content-teasers for latest news or posts from a folder. Use 0 to disable the section.'
+          css: 'lg:w-full'
 
     landingpageIntro:
       type: fieldset
-      legend: Landingpage Intro Segment
+      legend: 'Landingpage Intro Segment'
       fields:
-        introPosition:
-          type: number
-          label: Position of Intro Segment
-          description: Use 0 to disable the section
-          css: 'lg:w-full'
         introFullsize:
           type: checkbox
           label: Full Screen
@@ -280,7 +452,7 @@ forms:
           type: text
           label: Background Image Opacity
           placeholder: 0.8
-          description: 0 is fully transparent, 1 is without transparency
+          description: 0 is without transparency, 1 is fully transparent and invisible
         introImageBlendmode:
           type: select
           label: Blend mode for background image
@@ -308,22 +480,20 @@ forms:
       type: fieldset
       legend: Landingpage Info Segment
       fields:
-        infoPosition:
-          type: number
-          label: Position of Info Segment
-          description: Use 0 to disable the section          
         infoMarkdown:
           type: textarea
           label: Use Markdown
+        infoFolder:
+          type: text
+          label: List entries from folder
+          placeholder: /folder
+          description: Add a path to a folder from which you want to list entries
+          css: 'lg:w-full'
 
     landingpageTeaser:
       type: fieldset
       legend: Landingpage Teaser Segment
       fields:
-        teaserPosition:
-          type: number
-          label: Position of Teaser Segment
-          description: Use 0 to disable the section
         teaser1title:
           type: text
           label: Teaser 1 Title
@@ -377,10 +547,6 @@ forms:
       type: fieldset
       legend: Landingpage Contrast Segment
       fields:
-        contrastPosition:
-          type: number
-          label: Position of Contrast Segment
-          description: Use 0 to disable the section          
         contrastTitle:
           type: text
           label: Title
@@ -400,10 +566,6 @@ forms:
       type: fieldset
       legend: Landingpage Navigation Segment
       fields:
-        naviPosition:
-          type: number
-          label: Position of Navi Segment
-          description: Use 0 to disable the section          
         naviTitle:
           type: text
           label: Title for navigation
@@ -415,27 +577,22 @@ forms:
       type: fieldset
       legend: Landingpage News Segment      
       fields:
-        newsPosition:
-          type: number
-          label: Position of News Segment
-          description: Use 0 to disable the section          
-          css: 'lg:w-half'
         newsHeadline:
           type: text
           label: Headline for news-segment
           placeholder: News
-          css: 'lg:w-half'
+          css: 'lg:w-full'
         newsFolder:
           type: text
           label: List entries from folder
           placeholder: /blog
           description: Add a path to a folder from which you want to list entries
-          css: 'lg:w-half'
+          css: 'lg:w-full'
         newsLabel:
           type: text
           label: Label for read more link
           placeholder: All News
-          css: 'lg:w-half'
+          css: 'lg:w-full'
 
     fieldsetAuthor:
       type: fieldset
@@ -737,6 +894,15 @@ forms:
 metatabs:
   meta:
     fields:
+      template:
+        type: select
+        label: Select a template
+        options:
+          standard: 'Standard'
+          landingpage: 'Landingpage'      
+      shorttitle:
+        type: text
+        label: Enter a shorttitle for the landingpageInfo section
       fieldsetfolder:
         fields:
           glossary:
