@@ -14,7 +14,7 @@
 							{% if logo %}
 								<img src="{{ base_url }}/{{ logo }}" class="logo-image"/>
 							{% else %}
-								{{ settings.title }}
+								{{ settings.title|e }}
 							{% endif %}
 						</a>
 					</p>
@@ -137,6 +137,14 @@
 				<!-- burger menu controlled by invisible checkbox -->
 	  			<input type="checkbox" id="burger" class="dn">
 	  			<label for="burger" class="burgerbutton">&#9776;</label>	
+
+	  			{% if multilang %}
+	  				<div class="flex dib w-100 mb2">
+		  				{% for lang,link in multilang %}
+		  					<a class="pa2 mr1 ba link" href="{{ base_url }}{{ link }}">{{ lang }}</a>
+		  				{% endfor %}
+		  			</div>
+	  			{% endif %}
 
 				{% include 'partials/navigation.twig' %}
 
