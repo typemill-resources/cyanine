@@ -1,5 +1,5 @@
 name: Cyanine Theme
-version: 2.4.0
+version: 2.5.0
 description: 'Cyanine is a modern and flexible multi-purpose theme and the standard theme for Typemill.'
 author: Trendschau
 homepage: https://trendschau.net
@@ -382,6 +382,21 @@ forms:
           label: 'Homepage Intro Text'
           checkboxlabel: 'Show the text of the homepage and list posts below'
 
+    fieldsetLanguages:
+      type: fieldset
+      legend: 'Languages'
+      fields:
+        detectLang:
+          type: checkbox
+          label: 'Detect Browser Language'
+          checkboxlabel: 'Redirect visitors automatically to their preferred language version'
+          description: 'Detects the browser language on the first visit to the base homepage and redirects to the language version. Only active on multi-language websites. Manually selected languages always take precedence over the detection.'
+        introLangswitch:
+          type: checkbox
+          label: 'Language Switch'
+          checkboxlabel: 'Show language switch'
+          description: 'Shows links to all published translations below the intro button on the landingpage. Only visible in multilanguage projects.'
+
     landing:
       type: fieldset
       legend: 'Landingpage'
@@ -687,6 +702,10 @@ forms:
       type: fieldset
       legend: Navigations and Chapters
       fields:
+        nofoldernavi:
+          type: checkbox
+          label: Hide folder navigation
+          checkboxlabel: Hide the subnavigation below folder pages and show simple back and forward navigation instead
         chapnum:
           type: checkbox
           label: Chapter Numbers
@@ -917,3 +936,246 @@ metatabs:
           shorttitle:
             type: text
             label: Enter a shorttitle for the landingpageInfo section
+  cyhome:
+    show: home
+    fields:
+      mlinfo: 
+        type: paragraph
+        description: 'If you run a multilanguage page, then you can translate the landingpage for each language below. If you do not use the multilanguage or project feature, leave the fields empty.'
+      bloghomepage:
+        type: fieldset
+        legend: 'Posts on Homepage'
+        fields:
+          blogfolder:
+            type: text
+            label: 'Folder for Posts on Homepage'
+            placeholder: '/news'
+            description: 'Relative path to the folder with posts for the homepage. In multilanguage projects the path includes the project slug, e.g. /it/news.'
+      landingpageIntro:
+        type: fieldset
+        legend: 'Landingpage Intro Segment'
+        fields:
+          introTitle:
+            type: text
+            label: Title for your landingpage intro
+            placeholder: Typemill
+            css: 'lg:w-full'
+          introMarkdown:
+            type: textarea
+            label: Text for your landingpage intro (use markdown)
+          introButtonLink:
+            type: text
+            label: Link for startbutton
+            placeholder: /my/deeplink
+            css: 'lg:w-half'
+          introButtonLabel:
+            type: text
+            label: Label for startbutton
+            placeholder: my label
+            css: 'lg:w-half'
+
+      landingpageInfo:
+        type: fieldset
+        legend: Landingpage Info Segment
+        fields:
+          infoMarkdown:
+            type: textarea
+            label: Use Markdown
+          infoFolder:
+            type: text
+            label: List entries from folder
+            placeholder: /folder
+            description: Add a path to a folder from which you want to list entries
+            css: 'lg:w-full'
+
+      landingpageTeaser:
+        type: fieldset
+        legend: Landingpage Teaser Segment
+        fields:
+          teaser1title:
+            type: text
+            label: Teaser 1 Title
+            css: 'lg:w-half'
+          teaser1text:
+            type: text
+            label: Teaser 1 Text
+            css: 'lg:w-half'
+          teaser1link:
+            type: text
+            label: Teaser 1 Link
+            css: 'lg:w-half'
+          teaser1label:
+            type: text
+            label: Teaser 1 Label
+            css: 'lg:w-half'
+          teaser2title:
+            type: text
+            label: Teaser 2 Title
+            css: 'lg:w-half'
+          teaser2text:
+            type: text
+            label: Teaser 2 Text
+            css: 'lg:w-half'
+          teaser2link:
+            type: text
+            label: Teaser 2 Link
+            css: 'lg:w-half'
+          teaser2label:
+            type: text
+            label: Teaser 2 Label
+            css: 'lg:w-half'
+          teaser3title:
+            type: text
+            label: Teaser 3 Title
+            css: 'lg:w-half'
+          teaser3text:
+            type: text
+            label: Teaser 3 Text
+            css: 'lg:w-half'
+          teaser3link:
+            type: text
+            label: Teaser 3 Link
+            css: 'lg:w-half'
+          teaser3label:
+            type: text
+            label: Teaser 3 Label
+            css: 'lg:w-half'
+
+      landingpageContrast:
+        type: fieldset
+        legend: Landingpage Contrast Segment
+        fields:
+          contrastTitle:
+            type: text
+            label: Title
+          contrastText:
+            type: textarea
+            label: Text
+          contrastLink:
+            type: text
+            label: Button Link
+            css: 'lg:w-half'
+          contrastLabel:
+            type: text
+            label: Button Label
+            css: 'lg:w-half'
+
+      landingpageNavi:
+        type: fieldset
+        legend: Landingpage Navigation Segment
+        fields:
+          naviTitle:
+            type: text
+            label: Title for navigation
+
+      landingpageNews:
+        type: fieldset
+        legend: Landingpage News Segment      
+        fields:
+          newsHeadline:
+            type: text
+            label: Headline for news-segment
+            placeholder: News
+            css: 'lg:w-full'
+          newsFolder:
+            type: text
+            label: List entries from folder
+            placeholder: /blog
+            description: Add a path to a folder from which you want to list entries
+            css: 'lg:w-full'
+          newsLabel:
+            type: text
+            label: Label for read more link
+            placeholder: All News
+            css: 'lg:w-full'
+
+      fieldsetDate:
+        type: fieldset
+        legend: Article Date
+        fields:
+
+          dateIntro:
+            type: text
+            label: Date intro text
+            placeholder: Last Updated
+            css: 'lg:w-half'
+
+          dateFormat:
+            type: select
+            label: Date format
+            css: 'lg:w-half'
+            options:
+              'm/d/Y': 01/20/2020
+              'd.m.Y': 20.01.2020
+
+      fieldsetGitHub:
+        type: fieldset
+        legend: Article edit link
+        fields:
+          gitLink:
+            type: text
+            label: Link to repository
+            placeholder: https://github.com/typemill/documentation
+            help: Add the base url to the content repository (e.g. github).
+
+          editText:
+            type: text
+            label: Text/label for edit link
+            placeholder: edit on github
+
+      fieldsetPrint:
+        type: fieldset
+        legend: Print Button
+        fields:
+          printText:
+            type: text
+            label: Text/label for print-button
+            placeholder: print
+
+      fieldsetNavigations:
+        type: fieldset
+        legend: Navigations and Chapters
+        fields:
+          expand:
+            type: text
+            label: Label for expand button
+            placeholder: expand navigation
+            css: 'lg:w-half'
+          collapse:
+            type: text
+            label: Label for collapse button
+            placeholder: collapse navigation
+            css: 'lg:w-half'
+          next:
+            type: text
+            label: Label for next link
+            placeholder: next
+            css: 'lg:w-half'
+          previous:
+            type: text
+            label: Label for previous link
+            placeholder: previous
+            css: 'lg:w-half'
+
+      fieldsetfooter:
+        type: fieldset
+        legend: 'Footer columns'
+        fields:
+          footer1:
+            type: textarea
+            label: 'footer column 1 (use markdown)'
+          footer2:
+            type: textarea
+            label: 'footer column 2 (use markdown)'
+          footer3:
+            type: textarea
+            label: 'footer column 3 (use markdown)'
+
+      fieldsetcopyrightline:
+        type: fieldset
+        legend: 'Copyright Line'
+        fields:
+          copyrightlinetext:
+            type: textarea
+            label: 'Overwrite Copyright Line (use markdown)'
+            description: 'If overwrite the copyright line with the link to typemill, then please support Typemill e.g. with a link in the imprint, a blog-post, a social media mention or a recommendation.'
